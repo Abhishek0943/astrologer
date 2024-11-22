@@ -1,0 +1,19 @@
+@media screen and ( max-width : 800px ) {
+    footer>div {
+        flex-direction: column !important;
+    }
+
+    footer>div>div {
+        width: 95% !important;
+        margin: auto !important;
+        flex-direction: column !important;
+    }
+
+    footer>div>div img {
+        margin-left: -8% !important;
+    }
+
+    footer>div>div:nth-child(1) {
+        align-items: flex-start !important;
+    }
+}

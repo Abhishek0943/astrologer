@@ -1,0 +1,142 @@
+.warper {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+.nav {
+    width: 95%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    aspect-ratio: 1;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logoImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.navList {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navList>li {
+    color: #E7E6E6;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    white-space: nowrap;
+    font-size: 1rem;
+    padding: 3px 20px;
+    cursor: pointer;
+}
+
+.btnOutline {
+    background-color: transparent;
+    border: 2px solid #E7E6E6;
+    color: #FFF7F7;
+}
+
+.btnFill {
+    background-color: #D11A3B;
+    border: 2px solid #D11A3B;
+    color: #FFF7F7;
+}
+
+.right {
+    display: none;
+}
+
+.btnMob {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: #D11A3B;
+}
+
+.btnMob svg {
+    font-size: 1.6rem;
+    margin-top: 4px;
+}
+
+@media screen and (max-width:800px) {
+    .right {
+        display: flex;
+    }
+
+
+    .center {
+        transform: translateX(100%);
+        position: fixed;
+        z-index: 10;
+        top: 60px;
+        right: 0px;
+        /*  */
+        width: 100%;
+
+        height: calc(100vh - 60px);
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .center.mobSidebar {
+        transform: translateX(0%);
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 400px;
+        width: 100%;
+        padding: 10px 15px;
+height: 100%;
+        background-color: #141414;
+
+    }
+
+
+
+
+    .warper {
+        height: 60px;
+    }
+}

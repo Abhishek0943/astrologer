@@ -1,0 +1,271 @@
+.wrapper {
+    width: 100vw;
+    background-color: rgb(18, 18, 18);
+
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    width: 95%;
+    color: white;
+}
+
+.h1 {
+
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    padding: 28px 0px;
+    text-transform: capitalize;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+
+}
+
+.sideBar {
+    width: 300px;
+}
+
+.main ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main li {
+    list-style: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.2rem;
+    color: rgb(167, 167, 167);
+}
+
+
+.main li:hover,
+.active {
+    color: white !important;
+    background-color: rgb(29, 29, 29);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.box>label {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin: 0px 20px;
+    margin-top: 5px;
+}
+
+.box>p {
+    margin: 0px 20px;
+    font-weight: 500;
+}
+
+.box>input {
+    margin: 0px 20px;
+    border: .5px solid#272727;
+    background-color: black;
+    border-radius: 3px;
+    padding: 13px 15px 10px 15px;
+    /* flex-direction: ; */
+    /* outline: none; */
+    color: white;
+    max-width: 440px;
+    width: 95%;
+    position: relative;
+
+}
+
+.date {
+    margin: 0px 20px;
+    border: .5px solid#272727;
+    background-color: black;
+    border-radius: 3px;
+    padding: 13px 15px 10px 15px;
+    /* flex-direction: ; */
+    /* outline: none; */
+    color: white;
+    max-width: 440px;
+    width: 95%;
+}
+
+.boxBottom {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid#272727;
+    justify-content: space-between;
+}
+
+.boxBottom>button {
+    border: 1px solid#272727;
+    background-color: #ededed;
+    color: black;
+    font-family: "Poppins";
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.preferenceBox {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.myPreference {
+    background-color: #000;
+    border: 1px solid #272727;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    text-wrap: nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 0px;
+}
+
+.offerBox {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.offer {
+    width: 200px;
+    aspect-ratio: 1;
+    border: 1px solid #272727;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.coin {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.coin>img {
+    height: 40px;
+}
+
+.priceCon {
+    height: 60px;
+    border-top: 1px solid #272727;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+.discount {
+    text-align: right;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #272727;
+}
+
+.tr>div p {
+    font-size: .8rem;
+    font-weight: 300;
+    margin-top: 5px;
+    padding-left: 2px;
+}
+
+.mob {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mob>div {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .sideBar.route {
+        width: 100% !important;
+        
+    }
+
+    .mob>div {
+        display: flex;
+    }
+
+    .mob svg {
+        font-size: 1.4rem;
+    }
+
+    .content.route {
+        /* width: 100% !important; */
+        display: none;
+    }
+
+    .sideBar {
+        width: 0px;
+        overflow: hidden;
+    }
+
+    .main {
+        gap: 0px;
+    }
+
+    .h1 {
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+}

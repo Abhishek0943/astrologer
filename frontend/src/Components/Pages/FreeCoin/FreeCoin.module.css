@@ -1,0 +1,85 @@
+.warper {
+    max-width: 100vw;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    flex-direction: column;
+}
+
+.contact>p {
+    max-width: 1200px;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    width: 95%;
+    padding: 0px 0px 60px 0px;
+}
+
+.card {
+    flex: 1;
+    border: 2px solid #fdd835;
+    max-width: 220px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    min-width: 115px;
+    max-width: 12%;
+
+}
+
+.card>p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.result {
+    background-color: rgb(3, 197, 3);
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    font-size: 1.2rem;
+}
+
+.coinImage {
+    width: 60%;
+    aspect-ratio: 1;
+}
+
+.coinImage>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.collect {
+    margin: auto;
+    width: 150px;
+    background-color: green;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px;
+}
